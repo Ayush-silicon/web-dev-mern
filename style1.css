@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-image: url("https://img.freepik.com/premium-photo/drawing-red-printer-with-graph-it_1115474-124311.jpg?w=826");
+  background-size: cover; 
+  background-position: center; 
+}
+.container {
+  max-width: 600px; 
+  margin: 40px auto 60px; 
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px; 
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #f25b0a;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+textarea {
+  height: auto;
+}
+
+button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #254cb4;
+}
+
+#race_options {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+#race_options input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.form-message {
+  color: #3c763d;
+  text-align: center;
+  margin-top: 10px;
+}

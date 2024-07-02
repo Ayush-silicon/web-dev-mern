@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensex Survey</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sensex Survey</h1>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <h2>Survey Questions</h2>
+            <div class="form-group">
+                <label for="q1">Do you currently invest in the Sensex?</label>
+                <input type="radio" id="q1_yes" name="q1" value="yes"> Yes
+                <input type="radio" id="q1_no" name="q1" value="no"> No
+            </div>
+            <div class="form-group">
+                <label for="q2">What is your investment horizon for the Sensex?</label>
+                <select id="q2" name="q2">
+                    <option value="">Select</option>
+                    <option value="short-term">Short-term (Less than 1 year)</option>
+                    <option value="medium-term">Medium-term (1-5 years)</option>
+                    <option value="long-term">Long-term (5+ years)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q3">Which factors influence your investment decisions most?</label>
+                <textarea id="q3" name="q3" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="q4">Do you have any additional comments or suggestions regarding the Sensex?</label>
+                <textarea id="q4" name="q4" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="household_member">How many household members (including yourself) are 18 years or older?</label>
+                <input type="number" id="household_member" name="household_member" min="1">
+            </div>
+            <div class="form-group">
+                <label for="relationship">What is your relationship to the first person listed in your household (Optional):</label>
+                <input type="text" id="relationship" name="relationship">
+            </div>
+            <div class="form-group">
+                <label for="sex">Sex:</label>
+                <select id="sex" name="sex">
+                    <option value="">Select</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="form-group">
+                <label for="hispanic_origin">Are you of Hispanic origin? (Optional):</label>
+                <select id="hispanic_origin" name="hispanic_origin">
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="prefer_not_to_answer">Prefer not to answer</option>
+                </select>
+                <div class="form-group">
+                    <label for="race">Race (Optional - Select all that apply):</label>
+                    <div id="race_options">
+                        <input type="checkbox" id="race_white" name="race[]" value="white"> White<br>
+                        <input type="checkbox" id="race_black" name="race[]" value="black"> Black or African American<br>
+                        <input type="checkbox" id="race_asian" name="race[]" value="asian"> Asian<br>
+                        <input type="checkbox" id="race_native_american" name="race[]" value="native_american"> Native American<br>
+                        <input type="checkbox" id="race_other" name="race[]" value="other"> Other (please specify)<br>
+                        <input type="text" id="race_other_text" name="race_other_text" style="display: none;"> </div>
+                </div>
+            <div class="form-group">
+                <button type="submit">Submit Survey</button>
+        </form>
+    </div>
+</body>
+</html>
