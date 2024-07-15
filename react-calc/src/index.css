@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+ /* body{
+    @apply bg-slate-700
+  }
+  */
+  .calculator{
+    @apply bg-blue-950 w-80 mx-auto mt-10 p-4 round-lg shadow-lg
+  }
+  .input{
+    @apply w-full text-right py-4 px-5 text-2xl bg-transparent text-white
+  }
+  .buttons{
+    @apply grid grid-cols-4 gap-4 mt-4
+  }
+  button {
+    @apply transition duration-300 active:translate-x-1 text-xl
+  }
+  .number{
+    @apply bg-slate-400 text-blue-700 rounded-lg p-2 
+  }
+  .operator {
+    @apply bg-blue-500 text-white rounded-lg p-2
+  }
+}
